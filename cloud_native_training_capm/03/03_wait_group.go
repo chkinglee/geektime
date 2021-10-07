@@ -23,16 +23,16 @@ func rwSeparationWaitGroup() {
 	for i := 0; i < 10; i++ {
 		wWg.Add(1)
 		go func() {
+			defer wWg.Done()
 			value := rand.Int()
 			fmt.Println("new value:" + strconv.Itoa(value))
 			s.Write(1, value)
-			wWg.Done()
 		}()
 
 		rWg.Add(1)
 		go func() {
+			defer rWg.Done()
 			fmt.Println(s.Read(1))
-			rWg.Done()
 		}()
 	}
 	rWg.Wait()
