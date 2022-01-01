@@ -18,16 +18,16 @@ func main() {
 
 	http.HandleFunc("/healthz", CommonHandler(healthz))
 	http.HandleFunc("/a", CommonHandler(a))
-	err := http.ListenAndServe(":80", nil)
+	err := http.ListenAndServe(":8077", nil)
 	if err != nil {
 		log.Fatal(err)
 	}
 }
 
-// 0. 为所有请求设置公共header
+// HandlerFunc 0. 为所有请求设置公共header
 type HandlerFunc func(writer http.ResponseWriter, request *http.Request, statusCode *int)
 
-// 0. 为所有请求设置公共header
+// CommonHandler 0. 为所有请求设置公共header
 func CommonHandler(handler HandlerFunc) http.HandlerFunc {
 	return func(writer http.ResponseWriter, request *http.Request) {
 		// 1. 接收客户端request，并将request中带的header写入response header
@@ -37,7 +37,7 @@ func CommonHandler(handler HandlerFunc) http.HandlerFunc {
 		}
 
 		// 2. 读取当前系统的环境变量中的VERSION配置，并写入response header
-		osVersion := os.Getenv("VERSION") // TODO windows下自定义设置环境变量后，在这里获取不到……没找到原因。但key改成之前存在的环境变量就能获取到
+		osVersion := os.Getenv("VERSION")
 		writer.Header().Set("version", osVersion)
 
 		// 各自请求的业务处理
@@ -45,7 +45,7 @@ func CommonHandler(handler HandlerFunc) http.HandlerFunc {
 		handler(writer, request, &statusCode)
 
 		// 3. Server端记录访问日志包括客户端IP，HTTP返回码，输出到server端的标准输出
-		log.Println(request.Host, statusCode) // TODO 这里没处理localhost对应的ip，直接打印了localhost
+		log.Println(request.Host, statusCode)
 	}
 }
 
@@ -53,6 +53,10 @@ func CommonHandler(handler HandlerFunc) http.HandlerFunc {
 func healthz(writer http.ResponseWriter, request *http.Request, statusCode *int) {
 	*statusCode = http.StatusOK
 	writer.WriteHeader(*statusCode)
+	_, err := writer.Write([]byte("I am running"))
+	if err != nil {
+		return
+	}
 }
 
 func a(writer http.ResponseWriter, request *http.Request, statusCode *int) {
