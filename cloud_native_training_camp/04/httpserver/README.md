@@ -307,6 +307,8 @@ ingress.networking.k8s.io/httpserver created
 2. handler/routine.go新增注册http接口 /metrics，返回Prometheus的监控项数据
 3. handler/common.go对接口的公共handler补充了耗时统计的逻辑
 
+![img.png](assets/images/img_4.png)
+
 ### 部署kube-prometheus
 
 ```shell
