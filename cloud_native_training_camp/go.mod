@@ -1,4 +1,4 @@
-module 01
+module cloud_native_training_camp
 
 go 1.16
 

@@ -192,7 +192,7 @@ I am running
               port: 8077
               scheme: HTTP
             initialDelaySeconds: 10
-            periodSeconds: 80
+            periodSeconds: 8
             successThreshold: 1
             timeoutSeconds: 1
             failureThreshold: 3
@@ -202,7 +202,7 @@ I am running
               port: 8077
               scheme: HTTP
             initialDelaySeconds: 10
-            periodSeconds: 50
+            periodSeconds: 5
             successThreshold: 1
             timeoutSeconds: 1
             failureThreshold: 3
@@ -250,4 +250,29 @@ HTTP/1.1 200 OK
 ......
 Version: 1.0.1-a
 ......
+```
+
+### 使用makefile一键部署&销毁
+
+```shell
+# 部署
+make deploy
+
+# 销毁
+make destroy
+```
+
+```shell
+chkinglee@localhost:~/coding/github/chkinglee/geektime/cloud_native_training_camp/04/httpserver$ make destroy
+delete httpserver namespace
+kubectl delete ns httpserver
+namespace "httpserver" deleted
+chkinglee@localhost:~/coding/github/chkinglee/geektime/cloud_native_training_camp/04/httpserver$ make deploy
+deploying httpserver locally with kubernetes
+kubectl apply -f httpserver-deploy.yml
+namespace/httpserver created
+deployment.apps/httpserver created
+service/httpserver created
+kubectl apply -f httpserver-ingress.yml
+ingress.networking.k8s.io/httpserver created
 ```
