@@ -4,10 +4,13 @@
 // @Description :
 package handler
 
-import "net/http"
+import (
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"net/http"
+)
 
-func RegistryHttpRoutine()  {
+func RegistryHttpRoutine() {
 	http.HandleFunc("/healthz", CommonHandler(Healthz))
 	http.HandleFunc("/a", CommonHandler(A))
-
+	http.Handle("/metrics", promhttp.Handler())
 }

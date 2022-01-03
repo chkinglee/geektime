@@ -276,3 +276,66 @@ service/httpserver created
 kubectl apply -f httpserver-ingress.yml
 ingress.networking.k8s.io/httpserver created
 ```
+
+## 模块十作业
+
+### 作业内容
+
+1. 为HTTPServer添加0-2秒的随机延时
+2. 为HTTPServer项目添加延时Metric
+3. 将HTTPServer部署至测试集群，并完成Prometheus配置
+4. 从Promethus界面中查询延时指标数据
+5. （可选）创建一个Grafana Dashboard展现延时分配情况
+
+### HTTPServer集成metrics
+
+```shell
+# src 代码结构
+.
+├── handler
+│   ├── common.go
+│   ├── functions.go
+│   └── routine.go
+└── metrics
+    └── metrics.go
+```
+
+更新说明
+
+1. 新增metrics/metrics.go，用于声明和注册监控项
+    1. 本次新增的监控项为：geektime_cloud_native_training_camp_httpserver_requests_cost_seconds
+2. handler/routine.go新增注册http接口 /metrics，返回Prometheus的监控项数据
+3. handler/common.go对接口的公共handler补充了耗时统计的逻辑
+
+### 部署kube-prometheus
+
+```shell
+git clone https://github.com/prometheus-operator/kube-prometheus.git
+```
+
+方便起见将grafana、prometheus设置为NodePort，修改以下两个文件
+
+```shell
+grafana-service.yaml
+prometheus-service.yaml
+```
+
+**部署遇到的坑：node_exporter启动失败**
+
+```shell
+path /sys is mounted on /sys but it is not a shared or slave mount
+```
+
+试图解决了两个小时，无果。
+
+注释掉nodeExporter-daemonset.yaml 里的所有Volume配置。启动成功
+
+### 关于服务发现
+
+根据网上的教程，怎么配置都不生效
+
+https://www.cnblogs.com/wang-hongwei/p/15697789.html
+
+基本上全是内容一样的教程
+
+搞不定了。

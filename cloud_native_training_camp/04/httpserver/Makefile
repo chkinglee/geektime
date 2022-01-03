@@ -18,6 +18,11 @@ push: release
 	@echo "pushing httpserver image to docker hub"
 	docker push ${REGISTRY}/httpserver:${TAG}
 
+latest: release
+	@echo "pushing httpserver latest image"
+	docker tag ${REGISTRY}/httpserver:${TAG} ${REGISTRY}/httpserver:latest
+	docker push ${REGISTRY}/httpserver:latest
+
 clean:
 	@echo "cleaning httpserver build"
 	rm -rf ./bin
@@ -26,7 +31,6 @@ deploy:
 	@echo "deploying httpserver locally with kubernetes"
 	kubectl apply -f httpserver-deploy.yml
 	kubectl apply -f httpserver-ingress.yml
-
 destroy:
 	@echo "delete httpserver namespace"
 	kubectl delete ns httpserver
