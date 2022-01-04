@@ -18,9 +18,9 @@ spec:
       app: httpserver
   template:
     metadata:
-      annotations:
-        prometheus.io/scrape: "true"
-        prometheus.io/port: "8077"
+#      annotations:
+#        prometheus.io/scrape: "true"
+#        prometheus.io/port: "8077"
       labels:
         app: httpserver
     spec:
@@ -73,10 +73,13 @@ kind: Service
 metadata:
   name: httpserver
   namespace: httpserver
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "8077"
 spec:
   #  type: NodePort
   ports:
-    - name: httpserver # 请为所有端口指定名称
+    - name: httpserver
       port: 8088 # 对外开放的服务端口
       targetPort: 8077 # 后方 pod 的服务端口
   selector:

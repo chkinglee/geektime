@@ -317,14 +317,14 @@ git clone https://github.com/prometheus-operator/kube-prometheus.git
 
 方便起见将grafana、prometheus设置为NodePort，修改以下两个文件
 
-```shell
+```text
 grafana-service.yaml
 prometheus-service.yaml
 ```
 
 **部署遇到的坑：node_exporter启动失败**
 
-```shell
+```text
 path /sys is mounted on /sys but it is not a shared or slave mount
 ```
 
@@ -334,10 +334,123 @@ path /sys is mounted on /sys but it is not a shared or slave mount
 
 ### 关于服务发现
 
-根据网上的教程，怎么配置都不生效
+#### prometheus配置自动发现
 
-https://www.cnblogs.com/wang-hongwei/p/15697789.html
+~~根据网上的教程，怎么配置都不生效~~
 
-基本上全是内容一样的教程
+~~https://www.cnblogs.com/wang-hongwei/p/15697789.html~~
 
-搞不定了。
+~~基本上全是内容一样的教程~~
+
+~~搞不定了。~~
+
+野生教程害死人，上面的教程有配置错误，查看了prometheus-operator的日志后才发现，配置压根不生效
+
+**1. 正确配置附在了prometheus-additional.yaml**
+
+**2. 创建secret**
+
+```shell
+kubectl create secret generic additional-configs --from-file=prometheus-additional.yaml -n monitoring
+```
+
+**3. 配置additionalScrapeConfigs**
+
+```yaml
+# 编辑manifests/prometheus-prometheus.yaml文件并在spec下添加如下配置
+additionalScrapeConfigs:
+  name: additional-configs
+  key: prometheus-additional.yaml
+```
+
+**4. 配置clusterRole**
+
+```yaml
+# 编辑manifests/prometheusAdapter-clusterRole.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: prometheus-k8s
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - nodes
+      - services
+      - endpoints
+      - pods
+      - nodes/proxy
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - ""
+    resources:
+      - configmaps
+      - nodes/metrics
+    verbs:
+      - get
+  - nonResourceURLs:
+      - /metrics
+    verbs:
+      - get
+```
+
+**5. 使上述文件生效**
+
+```shell
+kubectl apply -f manifests
+```
+
+**6. 查看prometheus的configuration，看自动发现的job是否存在**
+
+![img.png](assets/images/img_5.png)
+
+#### HTTPServer配置自动发现
+
+在httpserver-deploy.yml中，更新svc配置，并apply -f
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpserver
+  namespace: httpserver
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "8077"
+spec:
+  skip...
+```
+
+查看prometheus是否发现HTTPServer
+
+![img_1.png](assets/images/img_6.png)
+
+### 查询展示
+
+#### Prometheus
+
+```genericsql
+histogram_quantile
+(0.95, sum(rate(geektime_cloud_native_training_camp_httpserver_requests_cost_seconds_bucket[5m])) by (le))
+```
+
+httpserver处理请求时，95%的请求在五分钟内，在不同响应时间区间的处理的数量的变化情况
+
+![img_2.png](assets/images/img_7.png)
+
+#### Grafana
+
+![img_3.png](assets/images/img_8.png)
+
+## 模块十二作业
+
+### 作业内容
+
+把我们的 httpserver 服务以 Istio Ingress Gateway 的形式发布出来。以下是你需要考虑的几点：
+
+1. 如何实现安全保证；
+2. 七层路由规则；
+3. 考虑 open tracing 的接入。
