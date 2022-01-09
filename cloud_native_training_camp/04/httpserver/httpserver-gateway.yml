@@ -1,0 +1,33 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: httpserver-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+    - port:
+        number: 8011
+        name: http
+        protocol: HTTP
+      hosts:
+        - "httpserver.chkinglee.me"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: httpserver
+spec:
+  hosts:
+    - "httpserver.chkinglee.me"
+  gateways:
+    - httpserver-gateway
+  http:
+    - match:
+        - uri:
+            prefix: /
+      route:
+        - destination:
+            host: vs.httpserver.chkinglee.me
+            port:
+              number: 8011
