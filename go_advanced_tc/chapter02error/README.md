@@ -33,7 +33,7 @@ PRIMARY KEY (`id`)
 ```
 > 数据库的连接方式、库名，都硬编码在main.go中，如有不同则手动更改
 > 
-> dsn := "root:Root1234@tcp(10.69.77.221:8306)/go_advanced_tc?charset=utf8mb4"
+> dsn := "root:Root1234@tcp(127.0.0.1:3306)/go_advanced_tc?charset=utf8mb4"
 
 
 - main.go 是程序主入口
