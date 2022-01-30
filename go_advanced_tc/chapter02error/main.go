@@ -13,7 +13,7 @@ import (
 
 
 func main() {
-	dsn := "root:Root1234@tcp(10.69.77.221:8306)/go_advanced_tc?charset=utf8mb4"
+	dsn := "root:Root1234@tcp(127.0.0.1:3306)/go_advanced_tc?charset=utf8mb4"
 	dbRepo := mysql.New(dsn)
 	defer func(repo mysql.DbRepo) {
 		err := repo.DbClose()
