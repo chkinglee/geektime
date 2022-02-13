@@ -22,7 +22,7 @@ func main() {
 		在本示例中，使用sync.WaitGroup，来保证server在所有请求处理完成后，再主动关闭
 
 		但依旧存在一个问题：
-		如果未处理完成的请求，处理时间过长，此时server又没有关闭，就可能导致又请求一直进，一直长时间处理，server可能永远无法关闭
+		如果未处理完成的请求，处理时间过长，此时server又没有关闭，就可能导致有请求一直进，一直长时间处理，server可能永远无法关闭
 	*/
 	done := make(chan error, 3)
 	stop := make(chan struct{})
