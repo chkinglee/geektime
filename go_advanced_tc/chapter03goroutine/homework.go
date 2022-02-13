@@ -44,7 +44,7 @@ func main() {
 	}
 }
 
-func signalListen(done chan error) {
+func signalListen(done chan<- error) {
 	c := make(chan os.Signal)
 	signal.Notify(c, syscall.SIGINT, syscall.SIGTERM)
 	select {
@@ -56,14 +56,14 @@ func signalListen(done chan error) {
 	done <- err
 }
 
-func stopListen(stop chan struct{}, done chan error) {
+func stopListen(stop chan<- struct{}, done <-chan error) {
 	select {
 	case <-done:
 		close(stop)
 	}
 }
 
-func server(addr string, stop chan struct{}, done chan error) error {
+func server(addr string, stop <-chan struct{}, done chan<- error) error {
 	h := httpHandler{wg: sync.WaitGroup{}}
 	s := http.Server{
 		Addr:    addr,
@@ -85,7 +85,7 @@ func server(addr string, stop chan struct{}, done chan error) error {
 }
 
 // 模拟一个server，最终返回一个error
-func serverFork(done chan error) error {
+func serverFork(done chan<- error) error {
 	time.Sleep(forkErrorTimeout)
 	err := fmt.Errorf("fork err")
 	done <- err
