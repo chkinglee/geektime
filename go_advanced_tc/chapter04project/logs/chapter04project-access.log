@@ -1,0 +1,148 @@
+{"level":"info","time":"2022-02-20 20:28:23","caller":"chapter04project/project.go:27","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 21:25:58","caller":"chapter04project/project.go:28","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 21:26:16","caller":"router/router.go:35","msg":"Hello World","sleep_time":1}
+{"level":"info","time":"2022-02-20 21:26:17","caller":"router/router.go:41","msg":"Event1"}
+{"level":"info","time":"2022-02-20 21:26:18","caller":"router/router.go:35","msg":"Hello World","sleep_time":7}
+{"level":"info","time":"2022-02-20 21:26:18","caller":"router/router.go:35","msg":"Hello World","sleep_time":7}
+{"level":"info","time":"2022-02-20 21:26:18","caller":"router/router.go:35","msg":"Hello World","sleep_time":19}
+{"level":"info","time":"2022-02-20 21:26:18","caller":"router/router.go:35","msg":"Hello World","sleep_time":1}
+{"level":"info","time":"2022-02-20 21:26:19","caller":"router/router.go:35","msg":"Hello World","sleep_time":18}
+{"level":"info","time":"2022-02-20 21:26:19","caller":"router/router.go:35","msg":"Hello World","sleep_time":5}
+{"level":"info","time":"2022-02-20 21:26:19","caller":"router/router.go:35","msg":"Hello World","sleep_time":0}
+{"level":"info","time":"2022-02-20 21:26:19","caller":"router/router.go:41","msg":"Event0"}
+{"level":"info","time":"2022-02-20 21:26:19","caller":"router/router.go:35","msg":"Hello World","sleep_time":16}
+{"level":"info","time":"2022-02-20 21:26:19","caller":"router/router.go:41","msg":"Event1"}
+{"level":"info","time":"2022-02-20 21:26:19","caller":"router/router.go:35","msg":"Hello World","sleep_time":0}
+{"level":"info","time":"2022-02-20 21:26:19","caller":"router/router.go:41","msg":"Event0"}
+{"level":"info","time":"2022-02-20 21:26:20","caller":"router/router.go:35","msg":"Hello World","sleep_time":14}
+{"level":"info","time":"2022-02-20 21:26:20","caller":"router/router.go:35","msg":"Hello World","sleep_time":11}
+{"level":"info","time":"2022-02-20 21:26:20","caller":"router/router.go:35","msg":"Hello World","sleep_time":2}
+{"level":"info","time":"2022-02-20 21:26:20","caller":"router/router.go:35","msg":"Hello World","sleep_time":9}
+{"level":"info","time":"2022-02-20 21:26:20","caller":"router/router.go:35","msg":"Hello World","sleep_time":8}
+{"level":"info","time":"2022-02-20 21:26:21","caller":"router/router.go:35","msg":"Hello World","sleep_time":14}
+{"level":"info","time":"2022-02-20 21:26:21","caller":"router/router.go:35","msg":"Hello World","sleep_time":11}
+{"level":"info","time":"2022-02-20 21:26:21","caller":"router/router.go:35","msg":"Hello World","sleep_time":5}
+{"level":"info","time":"2022-02-20 21:26:21","caller":"router/router.go:35","msg":"Hello World","sleep_time":17}
+{"level":"info","time":"2022-02-20 21:26:21","caller":"router/router.go:35","msg":"Hello World","sleep_time":6}
+{"level":"info","time":"2022-02-20 21:26:22","caller":"router/router.go:35","msg":"Hello World","sleep_time":15}
+{"level":"info","time":"2022-02-20 21:26:22","caller":"router/router.go:35","msg":"Hello World","sleep_time":6}
+{"level":"info","time":"2022-02-20 21:26:22","caller":"router/router.go:41","msg":"Event2"}
+{"level":"info","time":"2022-02-20 21:26:24","caller":"router/router.go:41","msg":"Event5"}
+{"level":"info","time":"2022-02-20 21:26:25","caller":"router/router.go:41","msg":"Event7"}
+{"level":"info","time":"2022-02-20 21:26:25","caller":"router/router.go:41","msg":"Event7"}
+{"level":"info","time":"2022-02-20 21:26:26","caller":"router/router.go:41","msg":"Event5"}
+{"level":"info","time":"2022-02-20 21:26:27","caller":"router/router.go:41","msg":"Event6"}
+{"level":"info","time":"2022-02-20 21:26:28","caller":"router/router.go:41","msg":"Event6"}
+{"level":"info","time":"2022-02-20 21:26:28","caller":"router/router.go:41","msg":"Event8"}
+{"level":"info","time":"2022-02-20 21:26:29","caller":"router/router.go:41","msg":"Event9"}
+{"level":"info","time":"2022-02-20 21:26:31","caller":"router/router.go:41","msg":"Event11"}
+{"level":"info","time":"2022-02-20 21:26:32","caller":"router/router.go:41","msg":"Event11"}
+{"level":"info","time":"2022-02-20 21:26:34","caller":"router/router.go:41","msg":"Event14"}
+{"level":"info","time":"2022-02-20 21:26:35","caller":"router/router.go:41","msg":"Event14"}
+{"level":"info","time":"2022-02-20 21:26:35","caller":"router/router.go:41","msg":"Event16"}
+{"level":"info","time":"2022-02-20 21:26:37","caller":"router/router.go:41","msg":"Event18"}
+{"level":"info","time":"2022-02-20 21:26:37","caller":"router/router.go:41","msg":"Event15"}
+{"level":"info","time":"2022-02-20 21:26:37","caller":"router/router.go:41","msg":"Event19"}
+{"level":"info","time":"2022-02-20 21:26:38","caller":"router/router.go:41","msg":"Event17"}
+{"level":"info","time":"2022-02-20 21:35:03","caller":"chapter04project/project.go:34","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 21:35:29","caller":"chapter04project/project.go:34","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 21:35:31","caller":"router/router.go:35","msg":"Hello World","sleep_time":1}
+{"level":"info","time":"2022-02-20 21:35:31","caller":"router/router.go:35","msg":"Hello World","sleep_time":7}
+{"level":"info","time":"2022-02-20 21:35:31","caller":"router/router.go:35","msg":"Hello World","sleep_time":7}
+{"level":"info","time":"2022-02-20 21:35:32","caller":"router/router.go:35","msg":"Hello World","sleep_time":19}
+{"level":"info","time":"2022-02-20 21:35:32","caller":"router/router.go:35","msg":"Hello World","sleep_time":1}
+{"level":"info","time":"2022-02-20 21:35:32","caller":"router/router.go:41","msg":"Event1"}
+{"level":"info","time":"2022-02-20 21:35:32","caller":"router/router.go:35","msg":"Hello World","sleep_time":18}
+{"level":"info","time":"2022-02-20 21:35:32","caller":"router/router.go:35","msg":"Hello World","sleep_time":5}
+{"level":"info","time":"2022-02-20 21:35:32","caller":"router/router.go:35","msg":"Hello World","sleep_time":0}
+{"level":"info","time":"2022-02-20 21:35:32","caller":"router/router.go:41","msg":"Event0"}
+{"level":"info","time":"2022-02-20 21:35:33","caller":"router/router.go:35","msg":"Hello World","sleep_time":16}
+{"level":"info","time":"2022-02-20 21:35:33","caller":"router/router.go:41","msg":"Event1"}
+{"level":"info","time":"2022-02-20 21:35:33","caller":"router/router.go:35","msg":"Hello World","sleep_time":0}
+{"level":"info","time":"2022-02-20 21:35:33","caller":"router/router.go:41","msg":"Event0"}
+{"level":"info","time":"2022-02-20 21:35:33","caller":"router/router.go:35","msg":"Hello World","sleep_time":14}
+{"level":"info","time":"2022-02-20 21:35:33","caller":"router/router.go:35","msg":"Hello World","sleep_time":11}
+{"level":"info","time":"2022-02-20 21:35:37","caller":"router/router.go:41","msg":"Event5"}
+{"level":"info","time":"2022-02-20 21:35:38","caller":"router/router.go:41","msg":"Event7"}
+{"level":"info","time":"2022-02-20 21:35:38","caller":"router/router.go:41","msg":"Event7"}
+{"level":"info","time":"2022-02-20 21:36:37","caller":"chapter04project/project.go:34","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 21:36:39","caller":"router/router.go:35","msg":"Hello World","sleep_time":1}
+{"level":"info","time":"2022-02-20 21:36:39","caller":"router/router.go:35","msg":"Hello World","sleep_time":7}
+{"level":"info","time":"2022-02-20 21:36:39","caller":"router/router.go:35","msg":"Hello World","sleep_time":7}
+{"level":"info","time":"2022-02-20 21:36:39","caller":"router/router.go:35","msg":"Hello World","sleep_time":19}
+{"level":"info","time":"2022-02-20 21:36:40","caller":"router/router.go:41","msg":"Event1"}
+{"level":"info","time":"2022-02-20 21:36:40","caller":"router/router.go:35","msg":"Hello World","sleep_time":1}
+{"level":"info","time":"2022-02-20 21:36:40","caller":"router/router.go:35","msg":"Hello World","sleep_time":18}
+{"level":"info","time":"2022-02-20 21:36:40","caller":"router/router.go:35","msg":"Hello World","sleep_time":5}
+{"level":"info","time":"2022-02-20 21:36:40","caller":"router/router.go:35","msg":"Hello World","sleep_time":0}
+{"level":"info","time":"2022-02-20 21:36:40","caller":"router/router.go:41","msg":"Event0"}
+{"level":"info","time":"2022-02-20 21:36:41","caller":"router/router.go:35","msg":"Hello World","sleep_time":16}
+{"level":"info","time":"2022-02-20 21:36:41","caller":"router/router.go:41","msg":"Event1"}
+{"level":"info","time":"2022-02-20 21:36:41","caller":"router/router.go:35","msg":"Hello World","sleep_time":0}
+{"level":"info","time":"2022-02-20 21:36:41","caller":"router/router.go:41","msg":"Event0"}
+{"level":"info","time":"2022-02-20 21:36:41","caller":"router/router.go:35","msg":"Hello World","sleep_time":14}
+{"level":"info","time":"2022-02-20 21:36:42","caller":"router/router.go:35","msg":"Hello World","sleep_time":11}
+{"level":"info","time":"2022-02-20 21:36:42","caller":"router/router.go:35","msg":"Hello World","sleep_time":2}
+{"level":"info","time":"2022-02-20 21:36:42","caller":"router/router.go:35","msg":"Hello World","sleep_time":9}
+{"level":"info","time":"2022-02-20 21:36:44","caller":"router/router.go:41","msg":"Event2"}
+{"level":"info","time":"2022-02-20 21:36:45","caller":"router/router.go:41","msg":"Event5"}
+{"level":"info","time":"2022-02-20 21:36:46","caller":"router/router.go:41","msg":"Event7"}
+{"level":"info","time":"2022-02-20 21:36:46","caller":"router/router.go:41","msg":"Event7"}
+{"level":"info","time":"2022-02-20 21:36:51","caller":"router/router.go:41","msg":"Event9"}
+{"level":"info","time":"2022-02-20 21:36:52","caller":"router/router.go:64","msg":"handler request timeout"}
+{"level":"info","time":"2022-02-20 21:37:48","caller":"chapter04project/project.go:34","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 21:37:52","caller":"router/router.go:35","msg":"Hello World","sleep_time":1}
+{"level":"info","time":"2022-02-20 21:37:52","caller":"router/router.go:35","msg":"Hello World","sleep_time":7}
+{"level":"info","time":"2022-02-20 21:37:52","caller":"router/router.go:35","msg":"Hello World","sleep_time":7}
+{"level":"info","time":"2022-02-20 21:37:52","caller":"router/router.go:35","msg":"Hello World","sleep_time":19}
+{"level":"info","time":"2022-02-20 21:37:52","caller":"router/router.go:35","msg":"Hello World","sleep_time":1}
+{"level":"info","time":"2022-02-20 21:37:52","caller":"router/router.go:35","msg":"Hello World","sleep_time":18}
+{"level":"info","time":"2022-02-20 21:37:53","caller":"router/router.go:41","msg":"Event1"}
+{"level":"info","time":"2022-02-20 21:37:53","caller":"router/router.go:35","msg":"Hello World","sleep_time":5}
+{"level":"info","time":"2022-02-20 21:37:53","caller":"router/router.go:35","msg":"Hello World","sleep_time":0}
+{"level":"info","time":"2022-02-20 21:37:53","caller":"router/router.go:41","msg":"Event0"}
+{"level":"info","time":"2022-02-20 21:37:53","caller":"router/router.go:35","msg":"Hello World","sleep_time":16}
+{"level":"info","time":"2022-02-20 21:37:53","caller":"router/router.go:35","msg":"Hello World","sleep_time":0}
+{"level":"info","time":"2022-02-20 21:37:53","caller":"router/router.go:41","msg":"Event0"}
+{"level":"info","time":"2022-02-20 21:37:53","caller":"router/router.go:41","msg":"Event1"}
+{"level":"info","time":"2022-02-20 21:37:53","caller":"router/router.go:35","msg":"Hello World","sleep_time":14}
+{"level":"info","time":"2022-02-20 21:37:58","caller":"router/router.go:77","msg":"receive a stop signal or channel(stop) is closed"}
+{"level":"info","time":"2022-02-20 21:37:58","caller":"router/router.go:41","msg":"Event5"}
+{"level":"info","time":"2022-02-20 21:37:59","caller":"router/router.go:41","msg":"Event7"}
+{"level":"info","time":"2022-02-20 21:37:59","caller":"router/router.go:41","msg":"Event7"}
+{"level":"info","time":"2022-02-20 21:38:03","caller":"router/router.go:64","msg":"handler request timeout"}
+{"level":"info","time":"2022-02-20 22:01:25","caller":"chapter04project/project.go:34","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 22:01:35","caller":"router/router.go:23","msg":"receive a stop signal or channel(stop) is closed"}
+{"level":"info","time":"2022-02-20 22:01:35","caller":"router/handler.go:62","msg":"all request done"}
+{"level":"info","time":"2022-02-20 22:01:45","caller":"chapter04project/project.go:34","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 22:01:55","caller":"router/router.go:23","msg":"receive a stop signal or channel(stop) is closed"}
+{"level":"info","time":"2022-02-20 22:01:55","caller":"router/handler.go:62","msg":"all request done"}
+{"level":"info","time":"2022-02-20 22:31:20","caller":"chapter04project/project.go:35","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 22:32:19","caller":"chapter04project/project.go:35","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 22:33:23","caller":"chapter04project/project.go:35","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 22:33:33","caller":"router/router.go:24","msg":"receive a stop signal or channel(stop) is closed"}
+{"level":"info","time":"2022-02-20 22:33:33","caller":"router/handler.go:62","msg":"all request done"}
+{"level":"info","time":"2022-02-20 22:34:43","caller":"chapter04project/project.go:35","msg":"Init logger success."}
+{"level":"error","time":"2022-02-20 22:34:45","caller":"student_handler/handler.go:29","msg":"err","error":"Error 1146: Table 'go_gin_api.student' doesn't exist"}
+{"level":"error","time":"2022-02-20 22:34:45","caller":"student_handler/handler.go:29","msg":"err","error":"Error 1146: Table 'go_gin_api.student' doesn't exist"}
+{"level":"error","time":"2022-02-20 22:34:46","caller":"student_handler/handler.go:29","msg":"err","error":"Error 1146: Table 'go_gin_api.student' doesn't exist"}
+{"level":"info","time":"2022-02-20 22:34:53","caller":"router/router.go:24","msg":"receive a stop signal or channel(stop) is closed"}
+{"level":"info","time":"2022-02-20 22:34:53","caller":"router/handler.go:62","msg":"all request done"}
+{"level":"info","time":"2022-02-20 22:37:23","caller":"chapter04project/project.go:35","msg":"Init logger success."}
+{"level":"info","time":"2022-02-20 22:37:24","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:25","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:26","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:26","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:26","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:27","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:27","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:27","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:27","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:27","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:28","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:28","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:28","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:28","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:28","caller":"student_handler/handler.go:40","msg":"get a student","student":{"Id":2,"Name":"chkinglee","Age":12}}
+{"level":"info","time":"2022-02-20 22:37:33","caller":"router/router.go:24","msg":"receive a stop signal or channel(stop) is closed"}
+{"level":"info","time":"2022-02-20 22:37:33","caller":"router/handler.go:62","msg":"all request done"}

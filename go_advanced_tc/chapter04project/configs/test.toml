@@ -1,0 +1,21 @@
+[mysql]
+    [mysql.base]
+        maxOpenConn = 10
+        maxIdleConn = 60
+        connMaxLifeTime = 60
+
+    [mysql.read]
+        addr = "10.69.77.221:8306"
+        name = "go_advanced_tc"
+        pass = "Root1234"
+        user = "root"
+
+    [mysql.write]
+        addr = "10.69.77.221:8306"
+        name = "go_advanced_tc"
+        pass = "Root1234"
+        user = "root"
+
+[project]
+    [project.api]
+        addr = "127.0.0.1:8088"
