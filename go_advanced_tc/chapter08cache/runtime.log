@@ -1,0 +1,91 @@
+current value size is 10 bytes
+default memory is 1126864 bytes
+current command type is set
+current command type is get
+value_bytes 10 use avg_memory 104.38 (52192480/499981)
+flush all data
+OK
+current value size is 20 bytes
+default memory is 1127056 bytes
+current command type is set
+current command type is get
+value_bytes 20 use avg_memory 120.38 (60192064/499980)
+flush all data
+OK
+current value size is 50 bytes
+default memory is 1127248 bytes
+current command type is set
+current command type is get
+value_bytes 50 use avg_memory 152.38 (76190560/499974)
+flush all data
+OK
+current value size is 100 bytes
+default memory is 1127440 bytes
+current command type is set
+current command type is get
+value_bytes 100 use avg_memory 200.38 (100189696/499976)
+flush all data
+OK
+current value size is 200 bytes
+default memory is 1127632 bytes
+current command type is set
+current command type is get
+value_bytes 200 use avg_memory 296.38 (148189696/499984)
+flush all data
+OK
+current value size is 1024 bytes
+default memory is 1127824 bytes
+current command type is set
+current command type is get
+value_bytes 1024 use avg_memory 1624.38 (812158752/499978)
+flush all data
+OK
+current value size is 5120 bytes
+default memory is 1128016 bytes
+current command type is set
+current command type is get
+value_bytes 5120 use avg_memory 5720.38 (2860051504/499975)
+flush all data
+OK
+current value size is 128 bytes
+default memory is 1128208 bytes
+current command type is set
+current command type is get
+value_bytes 128 use avg_memory 232.38 (116187136/499968)
+flush all data
+OK
+current value size is 256 bytes
+default memory is 1128400 bytes
+current command type is set
+current command type is get
+value_bytes 256 use avg_memory 360.38 (180186208/499977)
+flush all data
+OK
+current value size is 1024 bytes
+default memory is 1128592 bytes
+current command type is set
+current command type is get
+value_bytes 1024 use avg_memory 1624.38 (812150672/499973)
+flush all data
+OK
+current value size is 2048 bytes
+default memory is 1128784 bytes
+current command type is set
+current command type is get
+value_bytes 2048 use avg_memory 2648.38 (1324149424/499983)
+flush all data
+OK
+current value size is 5120 bytes
+default memory is 1128976 bytes
+current command type is set
+current command type is get
+value_bytes 5120 use avg_memory 5720.38 (2860062928/499977)
+flush all data
+OK
+current value size is 10240 bytes
+default memory is 1129168 bytes
+current command type is set
+current command type is get
+value_bytes 10240 use avg_memory 10840.38 (5419901840/499973)
+flush all data
+OK
