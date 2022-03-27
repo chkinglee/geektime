@@ -20,7 +20,7 @@ go run stick/client.go
 ```
 
 当client发送完毕后，查看server输出
-![img.png](img.png)
+![img.png](asset/img.png)
 
 从上图可以看出，server接收包时出现粘包
 
@@ -46,7 +46,7 @@ go run length_field/server.go
 go run length_field/client.go
 ```
 
-![img_1.png](img_1.png)
+![img_1.png](asset/img_1.png)
 
 **FixLength**
 
